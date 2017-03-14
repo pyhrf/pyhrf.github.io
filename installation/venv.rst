@@ -1,5 +1,6 @@
-.. _installation_venv:
+:orphan:
 
+.. _installation_venv:
 
 ===================================
 Installation in virtual environment

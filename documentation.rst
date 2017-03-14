@@ -1,3 +1,5 @@
+:orphan:
+
 Documentation
 =============
 
@@ -39,8 +41,8 @@ Site content
    introduction.rst
    installation.rst
    manual.rst
-   API Reference <autodoc/pyhrf.rst>
-   changelog.rst
+   API Reference <http://pyhrf.readthedocs.io>
+   Changelog <http://pyhrf.readthedocs.io/en/latest/changelog.html>
 
 Licence and authors
 -------------------
