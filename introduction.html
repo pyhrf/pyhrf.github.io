@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Introduction &#8212; PyHRF</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootswatch-3.3.6/yeti/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/font-mfizz.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+  
+  <a href="https://github.com/pyhrf/pyhrf"
+     class="visible-desktop"><img
+    style="position: absolute; top: 45px; right: 0; border: 0;"
+    src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"
+    alt="Fork me on GitHub"></a>
+
+
+<div id="navbar"
+     class="navbar navbar-default navbar-fixed-top">
+
+    <div class="container">
+        <div class="navbar-header">
+
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html">
+                        <img src="_static/pyhrf_logo_text.png">
+
+                 </a>
+            <span class="navbar-text navbar-version pull-left"><b></b></span>
+        </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+            <ul class="nav navbar-nav">
+                <li class="divider-vertical"></li>
+                
+                        <li>
+                            <a href="documentation.html">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="community.html">Community</a>
+                        </li>
+                        <li>
+                            <a href="news.html">News</a>
+                        </li>
+                
+
+                
+                    <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+                    
+                        <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#"> <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#scientific-issues">Scientific issues</a></li>
+<li><a class="reference internal" href="#package-overview">Package overview</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+                    
+                
+
+                
+
+                
+
+                
+            </ul>
+
+            
+                
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+            
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#scientific-issues">Scientific issues</a></li>
+<li><a class="reference internal" href="#package-overview">Package overview</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="introduction">
+<span id="id1"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="scientific-issues">
+<h2>Scientific issues<a class="headerlink" href="#scientific-issues" title="Permalink to this headline">¶</a></h2>
+<p>PyHRF aims to provide advanced tools for single-subject analysis of
+functional Magnetic Resonance Imaging (fMRI) data acquired during an
+experimental paradigm (i.e. not resting-state). The core idea of PyHRF is to
+estimate the dynamics of brain activation by recovering the so-called
+<strong>Hemodynamic Response Function (HRF)</strong> in a spatially varying manner. To this
+end, PyHRF implements two different approaches:</p>
+<ol class="arabic simple">
+<li>a voxel-wise and condition-wise HRF estimation <a class="footnote-reference" href="#id5" id="id2">[1]</a>;</li>
+<li>a parcel-wise spatially adaptive joint detection-estimation (JDE) algorithm <a class="footnote-reference" href="#id6" id="id3">[2]</a> <a class="footnote-reference" href="#id7" id="id4">[3]</a>.</li>
+</ol>
+<p>The second approach is more powerful since it jointly addresses (i) the
+localization of evoked brain activity in response to external stimulation and
+(ii) the estimation of parcelwise hemodynamic filters. To this end, a
+parcellation (either functional or anatomical) has to be provided as input
+parameter.</p>
+<p>This tool hence provides interesting perspectives for understanding the HRF
+differences between brain regions and also between individuals and
+populations (infants, children, adults, patients, etc). Within the classical
+workflow of fMRI data analysis (preprocessings, estimation, statistical
+inference), PyHRF takes place at the estimation stage. However, we have also
+implemented posterior probability maps (PPMs) to allow the user performing
+statistical inference at the subject-level.</p>
+<p>For the sake of computational efficiency, the variational
+expectation-maximization (VEM) is used as default algorithm for computing
+the solution. The results that are generated in the context are the following:</p>
+<ul class="simple">
+<li>the 3D effect size maps associated with each experimental condition;</li>
+<li>the 3D contrast maps specified by the user;</li>
+<li>the time-series describing the HRFs for the set of all brain regions
+(4D volume). The analysis can also be performed on the cortical surface from
+projected BOLD signals and then produces functional textures to be displayed
+on the input cortical mesh.</li>
+</ul>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>P. Ciuciu, J.-B. Poline, G. Marrelec, J. Idier, Ch. Pallier, and H. Benali,
+&#8220;Unsupervised robust non-parametric estimation of the hemodynamic response
+function for any fMRI experiment&#8221;, IEEE Trans. Medical Imaging;
+22(10):1235-1251, Oct 2003</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[2]</a></td><td>T. Vincent, L. Risser and P. Ciuciu, &#8220;Spatially adaptive mixture modeling
+for analysis of within-subject fMRI time series&#8221;, IEEE Trans. Medical
+Imaging; 29(4):1059-1074, Apr 2010.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id7" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[3]</a></td><td>L. Chari, T. Vincent, F. Forbes, M. Dojat and P. Ciuciu, &#8220;Fast joint
+detection-estimation of evoked brain activity in event-related fMRI using a
+variational approach&#8221;, IEEE Trans. Medical Imaging; 32(5):821-837, May 2013.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="package-overview">
+<h2>Package overview<a class="headerlink" href="#package-overview" title="Permalink to this headline">¶</a></h2>
+<p>PyHRF is mainly written in <em>Python</em>, with some C-extensions that handle
+computationally intensive parts of the algorithms. The package relies on
+classical scientific libraries: <a class="reference external" href="https://github.com/numpy/numpy">numpy</a>,
+<a class="reference external" href="https://github.com/scipy/scipy">scipy</a>,
+<a class="reference external" href="https://github.com/matplotlib/matplotlib">matplotlib</a> as well as
+<a class="reference external" href="https://github.com/nipy/nibabel">nibabel</a> to handle input/outputs and
+<a class="reference external" href="https://github.com/nipy/nipy">nipy</a> which provides tools for functional data
+analysis.</p>
+<p>PyHRF can be used in a stand-alone fashion and provides a set of simple commands
+in a modular fashion. The setup process is handled through XML files which can
+be adapted by the user from a set of templates. This format was chosen for its
+hierarchical organisation which suits the nested nature of the algorithm
+parametrization. A dedicated XML editor is provided with a PyQt graphical
+interface for a quicker edition and also a better review of the treatment
+parameters. When such an XML setup file is generated <em>ab initio</em>, it defines a
+default analysis which involves a small real data set shipped with the package.
+This allows for a quick testing of the algorithm and is also used for
+demonstration purpose.</p>
+<p>An artificial fMRI data generator is provided where the user can test the
+behaviour of the algorithms with different activation configurations, HRF shapes,
+nuisance types (noise, low frequency drifts) and paradigms (slow/fast
+event-related or bloc designs).</p>
+<p>Concerning the analysis process, which can be computationally intensive, PyHRF
+handles parallel computing through multiple core computers.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <ul class="list-inline">
+      <li><a href="https://github.com/pyhrf/pyhrf">GitHub</a></li>
+      <li>·</li>
+      <li><a href="https://github.com/pyhrf/pyhrf/issues">Issues</a></li>
+      <li>·</li>
+      <li><a href="https://github.com/pyhrf/pyhrf/releases">Releases</a></li>
+      <li class="pull-right"><a href="#">Back to top</a></li>
+    </ul>
+    <ul class="list-unstyled small">
+      <li>Copyright (c) 2016 CEA/DRF/I2BM/NeuroSpin - Inria/CEA Parietal - Inria/MISTIS</li>
+      <li>Code licensed under
+        <a href="https://opensource.org/licenses/CECILL-2.1">CeCILL v2</a>
+      </li>
+      <li>
+        Made with <a href="http://sphinx-doc.org">sphinx</a> using
+        <a href="https://github.com/ryan-roemer/sphinx-bootstrap-theme">bootstrap theme</a>
+        and inspired by <a href="http://vispy.org/">vispy</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

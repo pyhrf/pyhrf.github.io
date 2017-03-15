@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Installation for Ubuntu 16.04 &#8212; PyHRF</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.3.6/yeti/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/font-mfizz.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/style.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+  
+  <a href="https://github.com/pyhrf/pyhrf"
+     class="visible-desktop"><img
+    style="position: absolute; top: 45px; right: 0; border: 0;"
+    src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"
+    alt="Fork me on GitHub"></a>
+
+
+<div id="navbar"
+     class="navbar navbar-default navbar-fixed-top">
+
+    <div class="container">
+        <div class="navbar-header">
+
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="../index.html">
+                        <img src="../_static/pyhrf_logo_text.png">
+
+                 </a>
+            <span class="navbar-text navbar-version pull-left"><b></b></span>
+        </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+            <ul class="nav navbar-nav">
+                <li class="divider-vertical"></li>
+                
+                        <li>
+                            <a href="../documentation.html">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="../community.html">Community</a>
+                        </li>
+                        <li>
+                            <a href="../news.html">News</a>
+                        </li>
+                
+
+                
+                    <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+                    
+                        <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#"> <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Installation for Ubuntu 16.04</a><ul>
+<li><a class="reference internal" href="#required-dependencies">Required dependencies</a></li>
+<li><a class="reference internal" href="#optional-dependencies">Optional dependencies</a></li>
+<li><a class="reference internal" href="#pyhrf-installation">PyHRF Installation</a></li>
+<li><a class="reference internal" href="#pyhrf-update">PyHRF update</a></li>
+<li><a class="reference internal" href="#pyhrf-uninstallation">PyHRF uninstallation</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+                    
+                
+
+                
+
+                
+
+                
+            </ul>
+
+            
+                
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+            
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Installation for Ubuntu 16.04</a><ul>
+<li><a class="reference internal" href="#required-dependencies">Required dependencies</a></li>
+<li><a class="reference internal" href="#optional-dependencies">Optional dependencies</a></li>
+<li><a class="reference internal" href="#pyhrf-installation">PyHRF Installation</a></li>
+<li><a class="reference internal" href="#pyhrf-update">PyHRF update</a></li>
+<li><a class="reference internal" href="#pyhrf-uninstallation">PyHRF uninstallation</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="installation-for-ubuntu-16-04">
+<span id="installation-ubuntu1604"></span><h1>Installation for Ubuntu 16.04<a class="headerlink" href="#installation-for-ubuntu-16-04" title="Permalink to this headline">¶</a></h1>
+<p>These instructions are specific to <strong>Ubuntu 16.04</strong>.</p>
+<div class="section" id="required-dependencies">
+<h2>Required dependencies<a class="headerlink" href="#required-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>First, be sure that your system is up-to-date:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ sudo apt-get update
+$ sudo apt-get upgrade
+</pre></div>
+</div>
+<p>Then install the following packages:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ sudo apt-get install python-dev python-numpy python-scipy python-matplotlib python-nibabel python-nipy python-pip gcc
+</pre></div>
+</div>
+</div>
+<div class="section" id="optional-dependencies">
+<h2>Optional dependencies<a class="headerlink" href="#optional-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>Install the following packages:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ sudo apt-get install python-scikits-learn python-joblib python-pygraph python-pygraphviz python-pil python-munkres python-paramiko
+</pre></div>
+</div>
+<p>This dependency is too old on the packages system manager:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ pip install --user sphinx
+</pre></div>
+</div>
+<p>If you already installed sphinx with the packages manager, add the flag
+<code class="docutils literal"><span class="pre">--upgrade</span></code> to the previous command</p>
+<p>If you plan to use our specific viewer (pyhrf_viewer), run:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ sudo apt-get install python-qt4
+</pre></div>
+</div>
+</div>
+<div class="section" id="pyhrf-installation">
+<h2>PyHRF Installation<a class="headerlink" href="#pyhrf-installation" title="Permalink to this headline">¶</a></h2>
+<p>Install package from <a class="reference external" href="https://pypi.python.org/pypi/pyhrf">PyPI</a>.
+It is recommended to install the package in user mode (the <code class="docutils literal"><span class="pre">--user</span></code> option).</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ pip install --user pyhrf
+</pre></div>
+</div>
+<p>If you install in user mode, you need to concatenate <code class="docutils literal"><span class="pre">$HOME/.local/bin</span></code> to
+your <code class="docutils literal"><span class="pre">$PATH</span></code> environment variable by adding the following to your
+<code class="docutils literal"><span class="pre">$HOME/.bashrc</span></code> file:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">[</span> <span class="o">-</span><span class="n">d</span> <span class="s2">&quot;$HOME/.local/bin&quot;</span> <span class="p">];</span> <span class="n">then</span>
+    <span class="n">PATH</span><span class="o">=</span><span class="s2">&quot;$HOME/.local/bin:$PATH&quot;</span>
+<span class="n">fi</span>
+</pre></div>
+</div>
+<p>Update your <code class="docutils literal"><span class="pre">$PATH</span></code> environment variable by sourcing your <code class="docutils literal"><span class="pre">.bashrc</span></code> file:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ source ~/.bashrc
+</pre></div>
+</div>
+<p>Then you can run the unit tests:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ pyhrf_maketests
+</pre></div>
+</div>
+</div>
+<div class="section" id="pyhrf-update">
+<h2>PyHRF update<a class="headerlink" href="#pyhrf-update" title="Permalink to this headline">¶</a></h2>
+<p>To update the package, use pip:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ pip install --upgrade --user pyhrf
+</pre></div>
+</div>
+</div>
+<div class="section" id="pyhrf-uninstallation">
+<h2>PyHRF uninstallation<a class="headerlink" href="#pyhrf-uninstallation" title="Permalink to this headline">¶</a></h2>
+<p>To remove pyhrf package, use pip:</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ pip uninstall pyhrf
+</pre></div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <ul class="list-inline">
+      <li><a href="https://github.com/pyhrf/pyhrf">GitHub</a></li>
+      <li>·</li>
+      <li><a href="https://github.com/pyhrf/pyhrf/issues">Issues</a></li>
+      <li>·</li>
+      <li><a href="https://github.com/pyhrf/pyhrf/releases">Releases</a></li>
+      <li class="pull-right"><a href="#">Back to top</a></li>
+    </ul>
+    <ul class="list-unstyled small">
+      <li>Copyright (c) 2016 CEA/DRF/I2BM/NeuroSpin - Inria/CEA Parietal - Inria/MISTIS</li>
+      <li>Code licensed under
+        <a href="https://opensource.org/licenses/CECILL-2.1">CeCILL v2</a>
+      </li>
+      <li>
+        Made with <a href="http://sphinx-doc.org">sphinx</a> using
+        <a href="https://github.com/ryan-roemer/sphinx-bootstrap-theme">bootstrap theme</a>
+        and inspired by <a href="http://vispy.org/">vispy</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

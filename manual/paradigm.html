@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>File format specification &#8212; PyHRF</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.3.6/yeti/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/font-mfizz.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/style.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+  
+  <a href="https://github.com/pyhrf/pyhrf"
+     class="visible-desktop"><img
+    style="position: absolute; top: 45px; right: 0; border: 0;"
+    src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"
+    alt="Fork me on GitHub"></a>
+
+
+<div id="navbar"
+     class="navbar navbar-default navbar-fixed-top">
+
+    <div class="container">
+        <div class="navbar-header">
+
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="../index.html">
+                        <img src="../_static/pyhrf_logo_text.png">
+
+                 </a>
+            <span class="navbar-text navbar-version pull-left"><b></b></span>
+        </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+            <ul class="nav navbar-nav">
+                <li class="divider-vertical"></li>
+                
+                        <li>
+                            <a href="../documentation.html">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="../community.html">Community</a>
+                        </li>
+                        <li>
+                            <a href="../news.html">News</a>
+                        </li>
+                
+
+                
+                    <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+                    
+                        <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#"> <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">File format specification</a><ul>
+<li><a class="reference internal" href="#paradigm-csv-format">Paradigm CSV format</a></li>
+<li><a class="reference internal" href="#contrast-json-format">Contrast JSON format</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+                    
+                
+
+                
+
+                
+
+                
+            </ul>
+
+            
+                
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+            
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">File format specification</a><ul>
+<li><a class="reference internal" href="#paradigm-csv-format">Paradigm CSV format</a></li>
+<li><a class="reference internal" href="#contrast-json-format">Contrast JSON format</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="file-format-specification">
+<span id="paradigm"></span><h1>File format specification<a class="headerlink" href="#file-format-specification" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="paradigm-csv-format">
+<h2>Paradigm CSV format<a class="headerlink" href="#paradigm-csv-format" title="Permalink to this headline">¶</a></h2>
+<p>To encode the experimental paradigm, the CSV file format comprises 5 columns:</p>
+<ol class="arabic simple">
+<li>Session number (integer)</li>
+<li>Experimental Condition, as string with double quotes</li>
+<li>Onset (float in s.)</li>
+<li>Duration (float s.). 0 for event-related paradigm</li>
+<li>Amplitude (float, default is 1.).</li>
+</ol>
+<p>Example extracted from <code class="docutils literal"><span class="pre">pyhrf/python/datafiles/paradigm_loc.csv</span></code>:</p>
+<table border="1" class="colwidths-given docutils" id="id1">
+<caption><span class="caption-text">Localizer paradigm</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Session</th>
+<th class="head">Experimental Condition</th>
+<th class="head">Onset</th>
+<th class="head">Duration</th>
+<th class="head">Amplitude</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>calculaudio</td>
+<td>35.400000</td>
+<td>0.000000</td>
+<td><ol class="first last arabic simple">
+<li></li>
+</ol>
+</td>
+</tr>
+<tr class="row-odd"><td>0</td>
+<td>clicDaudio</td>
+<td>143.400000</td>
+<td>0.000000</td>
+<td><ol class="first last arabic simple">
+<li></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td>0</td>
+<td>clicDaudio</td>
+<td>162.000000</td>
+<td>0.000000</td>
+<td><ol class="first last arabic simple">
+<li></li>
+</ol>
+</td>
+</tr>
+<tr class="row-odd"><td>0</td>
+<td>clicDaudio</td>
+<td>230.000000</td>
+<td>0.000000</td>
+<td><ol class="first last arabic simple">
+<li></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td>0</td>
+<td>clicDvideo</td>
+<td>18.000000</td>
+<td>0.000000</td>
+<td><ol class="first last arabic simple">
+<li></li>
+</ol>
+</td>
+</tr>
+<tr class="row-odd"><td>0</td>
+<td>clicDvideo</td>
+<td>69.000000</td>
+<td>0.000000</td>
+<td><ol class="first last arabic simple">
+<li></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td>0</td>
+<td>clicDvideo</td>
+<td>227.700000</td>
+<td>0.000000</td>
+<td><ol class="first last arabic simple">
+<li></li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>NB</strong>: Be careful not to end float onset and duration with a point <code class="docutils literal"><span class="pre">.</span></code>
+because it could result in python not being able to split the paradigm
+correctly (end with a zero if necessary)</p>
+</div>
+<div class="section" id="contrast-json-format">
+<h2>Contrast JSON format<a class="headerlink" href="#contrast-json-format" title="Permalink to this headline">¶</a></h2>
+<p>To encode contrasts definition, use the following <strong>json format</strong>:</p>
+<div class="code json highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;contrast_name&quot;</span><span class="p">:</span> <span class="s2">&quot;linear combination of conditions&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Audio-Video&quot;</span><span class="p">:</span> <span class="s2">&quot;clicDaudio-clicDvideo&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The names in the contrast definition <strong>must</strong> correspond to
+the experimental conditions (<strong>case sensitive</strong>) defined in the above CSV file.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <ul class="list-inline">
+      <li><a href="https://github.com/pyhrf/pyhrf">GitHub</a></li>
+      <li>·</li>
+      <li><a href="https://github.com/pyhrf/pyhrf/issues">Issues</a></li>
+      <li>·</li>
+      <li><a href="https://github.com/pyhrf/pyhrf/releases">Releases</a></li>
+      <li class="pull-right"><a href="#">Back to top</a></li>
+    </ul>
+    <ul class="list-unstyled small">
+      <li>Copyright (c) 2016 CEA/DRF/I2BM/NeuroSpin - Inria/CEA Parietal - Inria/MISTIS</li>
+      <li>Code licensed under
+        <a href="https://opensource.org/licenses/CECILL-2.1">CeCILL v2</a>
+      </li>
+      <li>
+        Made with <a href="http://sphinx-doc.org">sphinx</a> using
+        <a href="https://github.com/ryan-roemer/sphinx-bootstrap-theme">bootstrap theme</a>
+        and inspired by <a href="http://vispy.org/">vispy</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

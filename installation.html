@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Installation &#8212; PyHRF</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootswatch-3.3.6/yeti/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/font-mfizz.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+  
+  <a href="https://github.com/pyhrf/pyhrf"
+     class="visible-desktop"><img
+    style="position: absolute; top: 45px; right: 0; border: 0;"
+    src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"
+    alt="Fork me on GitHub"></a>
+
+
+<div id="navbar"
+     class="navbar navbar-default navbar-fixed-top">
+
+    <div class="container">
+        <div class="navbar-header">
+
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html">
+                        <img src="_static/pyhrf_logo_text.png">
+
+                 </a>
+            <span class="navbar-text navbar-version pull-left"><b></b></span>
+        </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+            <ul class="nav navbar-nav">
+                <li class="divider-vertical"></li>
+                
+                        <li>
+                            <a href="documentation.html">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="community.html">Community</a>
+                        </li>
+                        <li>
+                            <a href="news.html">News</a>
+                        </li>
+                
+
+                
+                    <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+                    
+                        <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#"> <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Installation</a><ul>
+<li><a class="reference internal" href="#requirements-dependencies">Requirements / Dependencies</a></li>
+<li><a class="reference internal" href="#linux-installation">Linux Installation</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+                    
+                
+
+                
+
+                
+
+                
+            </ul>
+
+            
+                
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+            
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Installation</a><ul>
+<li><a class="reference internal" href="#requirements-dependencies">Requirements / Dependencies</a></li>
+<li><a class="reference internal" href="#linux-installation">Linux Installation</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="installation">
+<span id="id1"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>Instructions are given for <strong>Linux</strong> and <strong>Python 2.7</strong>. The package is
+mainly developed and tested under Ubuntu 14.04, we then recommend this
+distribution. We officially support Ubuntu 12.04, Ubuntu 14.04,
+Debian stable (jessie), Fedora 21 and 22, and Arch Linux. See
+<a class="reference external" href="#linux-based">below</a> for instructions for each distribution.</p>
+<p>For <strong>windows users</strong>, a linux distribution can be installed easily inside a
+virtual machine such as Virtual Box. This wiki page explains
+<a class="reference external" href="http://www.wikihow.com/Install-Ubuntu-on-VirtualBox">how to install ubuntu from scratch in Virtual Box</a>
+or you can get some <a class="reference external" href="http://virtualboxes.org/images/ubuntu/">free VirtualBox images</a>.</p>
+<div class="section" id="requirements-dependencies">
+<h2>Requirements / Dependencies<a class="headerlink" href="#requirements-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>Dependencies are:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.python.org">python</a> 2.7 <strong>with development headers</strong></li>
+<li><a class="reference external" href="http://docs.scipy.org/doc/numpy/user/install.html">numpy</a> &gt;= 1.0</li>
+<li><a class="reference external" href="http://www.scipy.org/install.html">scipy</a> &gt;= 0.7</li>
+<li><a class="reference external" href="http://matplotlib.org/users/installing.html">matplotlib</a></li>
+<li><a class="reference external" href="http://nipy.sourceforge.net/nibabel/">nibabel</a></li>
+<li><a class="reference external" href="http://sympy.sourceforge.net">sympy</a> (required by nipy)</li>
+<li><a class="reference external" href="http://nipy.sourceforge.net/nipy/stable/users/installation.html">nipy</a></li>
+<li>a C compiler</li>
+</ul>
+<p>Optional dependencies:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.riverbankcomputing.com/software/pyqt/download">PyQt4</a> (viewer and XML editor)</li>
+<li><a class="reference external" href="https://pythonhosted.org/joblib">joblib</a> (local distributed computing)</li>
+<li><a class="reference external" href="http://www.paramiko.org">paramiko</a> (local network distributed computing)</li>
+<li><a class="reference external" href="https://github.com/neurospin/soma-workflow">soma-workflow</a> (remote distributed computing)</li>
+<li><a class="reference external" href="http://scikit-learn.org/">scikit-learn</a> (clustering)</li>
+<li><a class="reference external" href="http://www.sphinx-doc.org">sphinx</a> (to generate documentation)</li>
+<li><a class="reference external" href="https://pygraphviz.github.io">pygraphviz</a> (for optimized graph operations and outputs)</li>
+<li><a class="reference external" href="http://software.clapper.org/munkres">munkres</a> (parcellation operation)</li>
+</ul>
+</div>
+<div class="section" id="linux-installation">
+<h2>Linux Installation<a class="headerlink" href="#linux-installation" title="Permalink to this headline">¶</a></h2>
+<p>Please refer to the page corresponding to your distribution.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation/ubuntu_12_04.html">Installation for Ubuntu 12.04</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation/ubuntu_14_04.html">Installation for Ubuntu 14.04</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation/ubuntu_16_04.html">Installation for Ubuntu 16.04</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation/debian_stable.html">Installation for Debian stable (jessie)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation/fedora_21.html">Installation for Fedora 21</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation/fedora_22.html">Installation for Fedora 22</a></li>
+</ul>
+</div>
+<p>If you have another distribution or you are an advanced user, consider
+<a class="reference internal" href="installation/venv.html"><span class="doc">installing pyhrf in a virtual environment</span></a>.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <ul class="list-inline">
+      <li><a href="https://github.com/pyhrf/pyhrf">GitHub</a></li>
+      <li>·</li>
+      <li><a href="https://github.com/pyhrf/pyhrf/issues">Issues</a></li>
+      <li>·</li>
+      <li><a href="https://github.com/pyhrf/pyhrf/releases">Releases</a></li>
+      <li class="pull-right"><a href="#">Back to top</a></li>
+    </ul>
+    <ul class="list-unstyled small">
+      <li>Copyright (c) 2016 CEA/DRF/I2BM/NeuroSpin - Inria/CEA Parietal - Inria/MISTIS</li>
+      <li>Code licensed under
+        <a href="https://opensource.org/licenses/CECILL-2.1">CeCILL v2</a>
+      </li>
+      <li>
+        Made with <a href="http://sphinx-doc.org">sphinx</a> using
+        <a href="https://github.com/ryan-roemer/sphinx-bootstrap-theme">bootstrap theme</a>
+        and inspired by <a href="http://vispy.org/">vispy</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>
