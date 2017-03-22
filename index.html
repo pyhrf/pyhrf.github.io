@@ -50,6 +50,18 @@
     src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"
     alt="Fork me on GitHub"></a>
 
+    <script>
+        // Adjust banner height.
+        $(function () {
+            var html_file = window.location.pathname.split('/').slice(-1);
+            if (html_file == '' || html_file == 'index.html') {
+                var main_container = $(".container .row")[0];
+                main_container.classList.add('middle');
+            }
+        });
+    </script>
+
+
 
 <div id="navbar"
      class="navbar navbar-default navbar-fixed-top">
@@ -147,7 +159,7 @@
 <p>PyHRF is a <a class="reference external" href="http://www.python.org">Python</a> library for the analysis
 of fMRI data based on the study of hemodynamics.</p>
 </div>
-<div class="col-lg-3 text-right docutils container">
+<div class="col-lg-3 text-right visible-lg docutils container">
 <h3><i class="fa fa-2x icon-python"></i> Pythonic</h3>
 <p><small>Python powered</small></p><h3><i class="fa fa-github fa-2x"></i> Open Source</h3>
 <p><small>Join us on github</small></p><h3><i class="fa fa-2x icon-shell"></i> Interactive</h3>

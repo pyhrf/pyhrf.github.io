@@ -46,3 +46,9 @@ body {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+.middle {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-45%);
+}

@@ -15,7 +15,7 @@
          PyHRF is a `Python <http://www.python.org>`_ library for the analysis
          of fMRI data based on the study of hemodynamics.
 
-      .. container:: col-lg-3 text-right
+      .. container:: col-lg-3 text-right visible-lg-*
 
 
          .. raw:: html
