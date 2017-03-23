@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>File format specification &#8212; PyHRF</title>
+    <title>3. File format specification &#8212; PyHRF</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -120,9 +120,9 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">File format specification</a><ul>
-<li><a class="reference internal" href="#paradigm-csv-format">Paradigm CSV format</a></li>
-<li><a class="reference internal" href="#contrast-json-format">Contrast JSON format</a></li>
+<li><a class="reference internal" href="#">3. File format specification</a><ul>
+<li><a class="reference internal" href="#paradigm-csv-format">3.1. Paradigm CSV format</a></li>
+<li><a class="reference internal" href="#contrast-json-format">3.2. Contrast JSON format</a></li>
 </ul>
 </li>
 </ul>
@@ -157,9 +157,9 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li><a class="reference internal" href="#">File format specification</a><ul>
-<li><a class="reference internal" href="#paradigm-csv-format">Paradigm CSV format</a></li>
-<li><a class="reference internal" href="#contrast-json-format">Contrast JSON format</a></li>
+<li><a class="reference internal" href="#">3. File format specification</a><ul>
+<li><a class="reference internal" href="#paradigm-csv-format">3.1. Paradigm CSV format</a></li>
+<li><a class="reference internal" href="#contrast-json-format">3.2. Contrast JSON format</a></li>
 </ul>
 </li>
 </ul>
@@ -176,9 +176,9 @@
     <div class="col-md-9 content">
       
   <div class="section" id="file-format-specification">
-<span id="paradigm"></span><h1>File format specification<a class="headerlink" href="#file-format-specification" title="Permalink to this headline">¶</a></h1>
+<span id="paradigm"></span><h1>3. File format specification<a class="headerlink" href="#file-format-specification" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="paradigm-csv-format">
-<h2>Paradigm CSV format<a class="headerlink" href="#paradigm-csv-format" title="Permalink to this headline">¶</a></h2>
+<h2>3.1. Paradigm CSV format<a class="headerlink" href="#paradigm-csv-format" title="Permalink to this headline">¶</a></h2>
 <p>To encode the experimental paradigm, the CSV file format comprises 5 columns:</p>
 <ol class="arabic simple">
 <li>Session number (integer)</li>
@@ -276,7 +276,7 @@ because it could result in python not being able to split the paradigm
 correctly (end with a zero if necessary)</p>
 </div>
 <div class="section" id="contrast-json-format">
-<h2>Contrast JSON format<a class="headerlink" href="#contrast-json-format" title="Permalink to this headline">¶</a></h2>
+<h2>3.2. Contrast JSON format<a class="headerlink" href="#contrast-json-format" title="Permalink to this headline">¶</a></h2>
 <p>To encode contrasts definition, use the following <strong>json format</strong>:</p>
 <div class="code json highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;contrast_name&quot;</span><span class="p">:</span> <span class="s2">&quot;linear combination of conditions&quot;</span><span class="p">,</span>

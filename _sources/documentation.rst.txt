@@ -63,10 +63,3 @@ Jaime Arias\ :sup:`(3)`.
 1. CEA/DRF/I2BM/NeuroSpin, Gif-Sur-Yvette, France
 2. Inria/CEA Parietal, Gif-Sur-Yvette, France
 3. Inria, MISTIS, Grenoble, France
-
-Indices and tables
-------------------
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

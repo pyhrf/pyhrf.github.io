@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Multicore computing &#8212; PyHRF</title>
+    <title>4. Multicore computing &#8212; PyHRF</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -120,9 +120,9 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Multicore computing</a><ul>
-<li><a class="reference internal" href="#configuration">Configuration</a></li>
-<li><a class="reference internal" href="#use">Use</a></li>
+<li><a class="reference internal" href="#">4. Multicore computing</a><ul>
+<li><a class="reference internal" href="#configuration">4.1. Configuration</a></li>
+<li><a class="reference internal" href="#use">4.2. Use</a></li>
 </ul>
 </li>
 </ul>
@@ -157,9 +157,9 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li><a class="reference internal" href="#">Multicore computing</a><ul>
-<li><a class="reference internal" href="#configuration">Configuration</a></li>
-<li><a class="reference internal" href="#use">Use</a></li>
+<li><a class="reference internal" href="#">4. Multicore computing</a><ul>
+<li><a class="reference internal" href="#configuration">4.1. Configuration</a></li>
+<li><a class="reference internal" href="#use">4.2. Use</a></li>
 </ul>
 </li>
 </ul>
@@ -176,20 +176,20 @@
     <div class="col-md-9 content">
       
   <div class="section" id="multicore-computing">
-<span id="multiprocessing-computation"></span><h1>Multicore computing<a class="headerlink" href="#multicore-computing" title="Permalink to this headline">¶</a></h1>
+<span id="multiprocessing-computation"></span><h1>4. Multicore computing<a class="headerlink" href="#multicore-computing" title="Permalink to this headline">¶</a></h1>
 <p>PyHRF can make computation on several cores using the
 <a class="reference external" href="https://pythonhosted.org/joblib/">joblib</a> python package. Joblib is an
 optional dependency of PyHRF so if you plan to use multiprocessing computation
 you need to install it (refer to the <a class="reference internal" href="../installation.html"><span class="doc">installation</span></a> page)</p>
 <div class="section" id="configuration">
-<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2>4.1. Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 <p>You can configure the number of used cores by setting the <code class="docutils literal"><span class="pre">nb_procs</span></code> option in
 the <a class="reference internal" href="pyhrf_configuration.html"><span class="doc">pyhrf configuration file</span></a>. If you want to a
 uto-detect the number of processors and cores that the system can use, set this
 option to <code class="docutils literal"><span class="pre">0</span></code>.</p>
 </div>
 <div class="section" id="use">
-<h2>Use<a class="headerlink" href="#use" title="Permalink to this headline">¶</a></h2>
+<h2>4.2. Use<a class="headerlink" href="#use" title="Permalink to this headline">¶</a></h2>
 <p>When calling the <code class="docutils literal"><span class="pre">pyhrf_jde_vem_analysis</span></code> script, the multiprocessing mode is
 active by default. If you want to disable it use <code class="docutils literal"><span class="pre">--no-parallel</span></code> command line
 option.</p>

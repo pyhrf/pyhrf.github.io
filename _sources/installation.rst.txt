@@ -7,8 +7,8 @@ Installation
 Instructions are given for **Linux** and **Python 2.7**. The package is
 mainly developed and tested under Ubuntu 14.04, we then recommend this
 distribution. We officially support Ubuntu 12.04, Ubuntu 14.04,
-Debian stable (jessie), Fedora 21 and 22, and Arch Linux. See
-`below <#linux-based>`_ for instructions for each distribution.
+Debian stable (jessie), Fedora 21 and 22, and Arch Linux. See below for
+instructions for each distribution.
 
 For **windows users**, a linux distribution can be installed easily inside a
 virtual machine such as Virtual Box. This wiki page explains

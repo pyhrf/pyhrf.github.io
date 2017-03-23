@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Visualization tools &#8212; PyHRF</title>
+    <title>2. Visualization tools &#8212; PyHRF</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -120,14 +120,14 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Visualization tools</a><ul>
-<li><a class="reference internal" href="#neuroelf">NeuroElf</a><ul>
-<li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#use">Use</a></li>
+<li><a class="reference internal" href="#">2. Visualization tools</a><ul>
+<li><a class="reference internal" href="#neuroelf">2.1. NeuroElf</a><ul>
+<li><a class="reference internal" href="#installation">2.1.1. Installation</a></li>
+<li><a class="reference internal" href="#use">2.1.2. Use</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#nilearn">Nilearn</a></li>
-<li><a class="reference internal" href="#pyhrf-viewer">PyHRF Viewer</a></li>
+<li><a class="reference internal" href="#nilearn">2.2. Nilearn</a></li>
+<li><a class="reference internal" href="#pyhrf-viewer">2.3. PyHRF Viewer</a></li>
 </ul>
 </li>
 </ul>
@@ -162,14 +162,14 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li><a class="reference internal" href="#">Visualization tools</a><ul>
-<li><a class="reference internal" href="#neuroelf">NeuroElf</a><ul>
-<li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#use">Use</a></li>
+<li><a class="reference internal" href="#">2. Visualization tools</a><ul>
+<li><a class="reference internal" href="#neuroelf">2.1. NeuroElf</a><ul>
+<li><a class="reference internal" href="#installation">2.1.1. Installation</a></li>
+<li><a class="reference internal" href="#use">2.1.2. Use</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#nilearn">Nilearn</a></li>
-<li><a class="reference internal" href="#pyhrf-viewer">PyHRF Viewer</a></li>
+<li><a class="reference internal" href="#nilearn">2.2. Nilearn</a></li>
+<li><a class="reference internal" href="#pyhrf-viewer">2.3. PyHRF Viewer</a></li>
 </ul>
 </li>
 </ul>
@@ -186,15 +186,15 @@
     <div class="col-md-9 content">
       
   <div class="section" id="visualization-tools">
-<span id="visualizer"></span><h1>Visualization tools<a class="headerlink" href="#visualization-tools" title="Permalink to this headline">¶</a></h1>
+<span id="visualizer"></span><h1>2. Visualization tools<a class="headerlink" href="#visualization-tools" title="Permalink to this headline">¶</a></h1>
 <p>This page sums up some advices on how to visualize PyHRF results.</p>
 <div class="section" id="neuroelf">
-<h2>NeuroElf<a class="headerlink" href="#neuroelf" title="Permalink to this headline">¶</a></h2>
+<h2>2.1. NeuroElf<a class="headerlink" href="#neuroelf" title="Permalink to this headline">¶</a></h2>
 <p>For exploration of results, you can use the <a class="reference external" href="http://neuroelf.net/">NeuroElf viewer</a>
 with small modifications of the code to allow better visualization of HRFs and results.
 NeuroElf is a MATLAB toolbox so you&#8217;ll need to have MATLAB installed on your system.</p>
 <div class="section" id="installation">
-<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<h3>2.1.1. Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
 <p>Go to the <a class="reference external" href="http://neuroelf.net/">NeuroElf</a> page and follow instructions for
 NeuroElf installation. Prefer the <em>flat folder snapshot</em>, extract it and add
 the path to your MATLAB&#8217;s path.</p>
@@ -206,7 +206,7 @@ original files).</p>
 <a class="reference external" href="../_static/NeuroElf_modifications_patch.tar.xz">patched version</a>.</p>
 </div>
 <div class="section" id="use">
-<h3>Use<a class="headerlink" href="#use" title="Permalink to this headline">¶</a></h3>
+<h3>2.1.2. Use<a class="headerlink" href="#use" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li>Run NeuroElf from MATLAB: <code class="docutils literal"><span class="pre">neuroelf_gui</span></code>.</li>
 <li>(Optional) From the <code class="docutils literal"><span class="pre">File</span></code> menu, click on <code class="docutils literal"><span class="pre">Open...</span></code> and select the
@@ -222,14 +222,14 @@ either the loaded anatomical file or the one provided by NeuroElf</li>
 </div>
 </div>
 <div class="section" id="nilearn">
-<h2>Nilearn<a class="headerlink" href="#nilearn" title="Permalink to this headline">¶</a></h2>
+<h2>2.2. Nilearn<a class="headerlink" href="#nilearn" title="Permalink to this headline">¶</a></h2>
 <p>For global visualization of PyHRF results, we advise to use the
 <a class="reference external" href="https://nilearn.github.io/">Nilearn</a> plot functions.</p>
 <p>We will provide some examples to plot PPMs maps as well as HRFs from active
 parcels.</p>
 </div>
 <div class="section" id="pyhrf-viewer">
-<h2>PyHRF Viewer<a class="headerlink" href="#pyhrf-viewer" title="Permalink to this headline">¶</a></h2>
+<h2>2.3. PyHRF Viewer<a class="headerlink" href="#pyhrf-viewer" title="Permalink to this headline">¶</a></h2>
 <p>There exists an <a class="reference external" href="https://github.com/pyhrf/pyhrf_viewer">old viewer</a> for
 PyHRF you can try <strong>which is not supported nor recommended anymore</strong>.</p>
 </div>
